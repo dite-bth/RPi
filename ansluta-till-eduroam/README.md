@@ -5,7 +5,7 @@ För att ansluta till eduroam via WiFi från din RPi krävs lite konfiguration. 
 2. Ta reda på namnet på ditt nätverkskort (dongel). Vanligen: wlan0
 3. Skapa en certifikatfil för att få ansluta till BTHs nätverk och spara den på lämplig plats. Exempelt nedan sparar filen i den förkonfigurerade användaren pi:s hemkatalog. Obs, det är viktigt att filens innehåll får radbrytningar precis som nedan.
 
-    `echo "-----BEGIN CERTIFICATE-----  
+    `echo "-----BEGIN CERTIFICATE-----   
     MIID+TCCAuGgAwIBAgIJAL1GWG15d5lpMA0GCSqGSIb3DQEBCwUAMIGSMQswCQYD
     VQQGEwJTRTERMA8GA1UECAwIQmxla2luZ2UxEzARBgNVBAcMCkthcmxza3JvbmEx
     IzAhBgNVBAoMGkJsZWtpbmdlIFRla25pc2thIEhvZ3Nrb2xhMRQwEgYDVQQDDAtC
