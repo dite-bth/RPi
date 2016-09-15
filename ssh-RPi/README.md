@@ -25,6 +25,9 @@ lo        Link encap:Local Loopback
           TX packets:4570782 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:0
           RX bytes:1111739966 (1.1 GB)  TX bytes:1111739966 (1.1 GB)
+          
+$ _
 ```
           
-          I exemplet ovan ser vi att vår ip-adress är 41.131.259.82 - den ska vi använda i t ex Putty för att ansluta.
+
+I exemplet ovan ser vi att vår ip-adress är 41.131.259.82 - den ska vi använda i t ex Putty för att ansluta.
