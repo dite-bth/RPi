@@ -41,4 +41,20 @@ Putty -> http://www.chiark.greenend.org.uk/~sgtatham/putty/
 öppna Putty och skriv in ip-adressen i textfältet som heter "Host Name (or IP address)". Tryck <RET> eller klicka på knappen "Open" - se bilden putty.png i denna mappen.
 Nu loggar du in med användarnamnet och lösenordet för din RPi i terminalen.
 
-.
+
+### anslut via annan terminal, t ex via Git bash
+
+Med programmet Git bash (https://git-scm.com/downloads) har du en terminal installerad på din maskin (Windows m.fl). Med den terminalen följer ssh med, vilket gör att du kan ansluta till din RPi genom att starta Git bash och sedan skriva kommandot för att ansluta till en RPi.
+
+Starta programmet Git bash och skriv följande kommando;
+
+```
+$ ssh pi@41.131.259.82
+```
+
+där pi är användarnamnet och ip-adressen till din RPI är angiven efter '@'.
+Nu kan du logga in.
+
+### anslut via ssh på Linux och OS X
+Grattis. Dessa OS har redan en terminal med ssh inbyggt.
+Starta en terminal och skriv kommandot `$ ssh pi@41.131.259.82` (där pi är användarnamn och ip-numret ska vara det som gäller för din RPi).
