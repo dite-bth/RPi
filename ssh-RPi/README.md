@@ -3,6 +3,8 @@
 ssh -> https://sv.wikipedia.org/wiki/Secure_Shell
 
 
+På Raspberry Pi's hemsida finns en mer ingående tutorial; https://www.raspberrypi.org/documentation/remote-access/ssh/
+
 ### ta reda på din RPI's ip
 Med ssh kan vi alltså ansluta till ett terminalgränssnitt till vår RPi.
 Innan vi kan göra det måste vi veta om den ip-adress vår RPi har. Exekvera kommandot ifconfig på din RPi och leta upp raden där `inet address` listas.
