@@ -6,7 +6,7 @@ Med ssh kan vi alltså ansluta till ett terminalgränssnitt till vår RPi.
 Innan vi kan göra det måste vi veta om den ip-adress vår RPi har. Exekvera kommandot ifconfig på din RPi och leta upp raden där `inet address` listas.
 
 Exempel;
-```
+``` bash
 $ ifconfig <RET>
 wlan0      Link encap:Ethernet  HWaddr 04:01:b8:08:58:01
           inet addr:41.131.259.82  Bcast:46.101.255.255  Mask:255.255.192.0
