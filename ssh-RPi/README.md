@@ -2,11 +2,13 @@
 
 ssh -> https://sv.wikipedia.org/wiki/Secure_Shell
 
+
+### ta reda på din RPI's ip
 Med ssh kan vi alltså ansluta till ett terminalgränssnitt till vår RPi.
 Innan vi kan göra det måste vi veta om den ip-adress vår RPi har. Exekvera kommandot ifconfig på din RPi och leta upp raden där `inet address` listas.
 
 Exempel;
-``` bash
+```bash
 $ ifconfig <RET>
 wlan0      Link encap:Ethernet  HWaddr 04:01:b8:08:58:01
           inet addr:41.131.259.82  Bcast:46.101.255.255  Mask:255.255.192.0
@@ -31,3 +33,12 @@ $ _
           
 
 I exemplet ovan ser vi att vår ip-adress är 41.131.259.82 - den ska vi använda i t ex Putty för att ansluta.
+
+### anslut via Putty
+
+Putty -> http://www.chiark.greenend.org.uk/~sgtatham/putty/
+
+öppna Putty och skriv in ip-adressen i textfältet som heter "Host Name (or IP address)". Tryck <RET> eller klicka på knappen "Open" - se bilden putty.png i denna mappen.
+Nu loggar du in med användarnamnet och lösenordet för din RPi i terminalen.
+
+.
