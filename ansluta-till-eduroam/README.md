@@ -53,10 +53,12 @@ För att ansluta till eduroam via WiFi från din RPi krävs lite konfiguration. 
       `password="ditt lösenord"`  
       `}`
 
-5. Till sist - boota om din RPi eller starta om nätverkskortet för att kolla så att allt funkar. Med kommandot ifconfig kan du kolla om ditt nätverkskort har fått en IP-adress. Leta efter "wlan0" (eller vad ditt nätverkskort heter) i outputen.Aktivera konfigurationen och testa om det funkar.  
+5. Till sist - boota om din RPi ELLER starta om nätverkskortet för att kolla så att allt funkar. Med kommandot ifconfig kan du kolla om ditt nätverkskort har fått en IP-adress. Leta efter "wlan0" (eller vad ditt nätverkskort heter) i outputen.Aktivera konfigurationen och testa om det funkar.  
     Antingen omstart: `sudo reboot` eller starta om nätverkskortet: `sudo ifdown wlan0 && ifup wlan0`.  
     Kolla om du fått ett IP: `ifconfig`.  
     Testa att pinga: `ping -c3 www.google.com`. 
+    
+    Anteckna ditt ip-nummer (så att du kan ssh:a in till din RPi senare).
 
 6. Om ovanstånde inte fungerar (gäller förmodligen RPI:s version 2) testa följande;
     Redigera filen `/etc/networks/interfaces` och skriv in följande i filen (om det inte redan står).  Innan du redigerar bör du nu enligt punkt 2 veta vad ditt nätverkskort heter. Nedan används `wlan0`, men det kan heta något annat t ex `wlp1s0`. För att ta reda på vad ditt heter kan du kolla output från ifconfig eller iwconfig. Om det heter något annat, byt ut wlan0 till aktuellt namn.
